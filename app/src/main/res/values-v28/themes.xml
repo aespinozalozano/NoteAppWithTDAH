@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="Button_color">
-        <item name="colorPrimary">@color/white</item>
-        <item name="android:textSize">12dp</item>
-        <item name="android:textFontWeight">500</item>
-    </style>
-</resources>
