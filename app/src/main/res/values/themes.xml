@@ -15,18 +15,17 @@
     </style>
 
     <style name="Button_color" parent="Widget.AppCompat.Button.Colored">
-
         <item name="android:textSize">15sp</item>
         <item name="android:textColorTertiary">@color/white</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:fontFamily">@font/sf_pro_display_medium</item>
         <item name="fontWeight">500</item>
-
     </style>
-    
-    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:windowBackground">@drawable/splash_background</item>
+
+    //Theme Progress Bar
+    <style name="progressBar">
+        <item name="colorSecondary">#0560FA</item>
     </style>
 
 </resources>

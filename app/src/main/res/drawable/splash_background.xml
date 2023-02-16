@@ -4,12 +4,12 @@
 
     <item android:drawable="@color/white"/>
     <item
-        android:left="80dp"
-        android:right="80dp"
-        android:top="350dp"
-        android:bottom="350dp"
+        android:left="20dp"
+        android:right="20dp"
+        android:top="280dp"
+        android:bottom="280dp"
         >
-        <bitmap android:src="@drawable/logo"/>
+        <bitmap android:src="@drawable/logoapp"/>
 
     </item>
 

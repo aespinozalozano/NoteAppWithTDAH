@@ -8,4 +8,8 @@
     <string name="login__password_hint">Contraseña</string>
     <string name="login__signup_header">Registrarse</string>
     <string name="login__password_recovery_header">¿Olvidaste tu contraseña?</string>
+    <string name="tittle_app_name">Notes App</string>
+    <string name="description_app">Una agenda sencilla y amigable, especial para personas con TDAH</string>
+    <string name="developed_by">By\n Ademir Espinoza Android Developer</string>
+    <string name="fragment1">¡Todos tus apuntes en la nube!</string>
 </resources>
