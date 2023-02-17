@@ -11,7 +11,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash_main)
 
         Handler().postDelayed(Runnable { // This method will be executed once the timer is over
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, OnboardingActivity::class.java))
 
             // close this activity
             finish()
