@@ -2,14 +2,10 @@ package com.example.noteappwithtdah.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
-import com.example.noteappwithtdah.MainActivity
+import com.example.noteappwithtdah.LoginActivity
 import com.example.noteappwithtdah.R
 import com.example.noteappwithtdah.databinding.Fragment1Binding
 import com.example.noteappwithtdah.utils.viewBinding
@@ -31,7 +27,7 @@ class Fragment1 : Fragment(R.layout.fragment1) {
 
         binding.btnOmitir1.setOnClickListener {
             activity?.finish()
-            startActivity(Intent(activity, MainActivity::class.java))
+            startActivity(Intent(activity, LoginActivity::class.java))
         }
 
 
