@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "816118497846",
+    "firebase_url": "https://note-app-15c48-default-rtdb.firebaseio.com",
     "project_id": "note-app-15c48",
     "storage_bucket": "note-app-15c48.appspot.com"
   },
@@ -14,7 +15,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "816118497846-qrpc6r9m47gnan1u45n397feo6boj2jb.apps.googleusercontent.com",
+          "client_id": "816118497846-3qkov533bfga04sn313rpuffvsf237ah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.noteappwithtdah",
+            "certificate_hash": "beb81fba97e5b3b4d98bb7eb72266de1894c063b"
+          }
+        },
+        {
+          "client_id": "816118497846-vku0oeb4ebu7hqeheokcs35ouen6f3p4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

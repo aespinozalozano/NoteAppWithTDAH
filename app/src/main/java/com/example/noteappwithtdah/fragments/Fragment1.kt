@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
-import com.example.noteappwithtdah.LoginActivity
+import com.example.noteappwithtdah.SignUpActivity
 import com.example.noteappwithtdah.R
 import com.example.noteappwithtdah.databinding.Fragment1Binding
 import com.example.noteappwithtdah.utils.viewBinding
@@ -27,7 +27,7 @@ class Fragment1 : Fragment(R.layout.fragment1) {
 
         binding.btnOmitir1.setOnClickListener {
             activity?.finish()
-            startActivity(Intent(activity, LoginActivity::class.java))
+            startActivity(Intent(activity, SignUpActivity::class.java))
         }
 
 

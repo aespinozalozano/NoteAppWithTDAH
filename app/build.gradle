@@ -16,7 +16,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.noteappwithtdah"
-        minSdk 24
+        minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -53,6 +53,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore-ktx:24.4.3'
     implementation 'androidx.core:core-ktx:+'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

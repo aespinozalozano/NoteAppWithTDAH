@@ -11,62 +11,130 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
-        <com.google.android.material.imageview.ShapeableImageView
+        <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/ivLogo"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:layout_marginTop="16dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/logo_n_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tilEmail"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.35000002" />
+            app:layout_constraintVertical_chainStyle="packed"
+            app:lottie_rawRes="@raw/animation_home"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_login"
-            style="@style/Button_color"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="52dp"
-            android:background="@drawable/btn_color"
-            android:elevation="10dp"
-            android:gravity="center"
-            android:paddingVertical="14dp"
-            android:text="@string/login__login_button"
-            app:layout_constraintEnd_toEndOf="@+id/ivLogo"
-            app:layout_constraintStart_toStartOf="@+id/ivLogo"
-            app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+<!--     <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:id="@+id/ivLogo"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/logo_noteapp"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/tilEmail"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_chainStyle="packed" />-->
 
-<!--        <androidx.appcompat.widget.AppCompatButton-->
-<!--            android:id="@+id/buttonGoogle"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginHorizontal="16dp"-->
-<!--            android:layout_marginTop="32dp"-->
-<!--            android:paddingVertical="14dp"-->
-<!--            android:text="Google Btn"-->
-<!--            app:layout_constraintEnd_toEndOf="@+id/bLogin"-->
-<!--            app:layout_constraintStart_toStartOf="@+id/bLogin"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/bLogin" />-->
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonGoogle"
-            app:icon="@drawable/google"
-            android:background="@drawable/btn_color"
-            app:iconSize="16dp"
-            android:layout_width="300dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="32dp"
+            android:hint="@string/login_email_hint"
+            app:layout_constraintBottom_toTopOf="@id/tilPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivLogo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/login__password_hint"
+            app:passwordToggleEnabled="true"
+            app:layout_constraintBottom_toTopOf="@id/bLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/bPasswordRecovery"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/login__password_recovery_header"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tilPassword"
+            app:layout_constraintBottom_toTopOf="@id/bLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
             android:paddingVertical="14dp"
-            android:text="Google Btn"
-            app:layout_constraintEnd_toEndOf="@+id/btn_login"
-            app:layout_constraintStart_toStartOf="@+id/btn_login"
-            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+            android:elevation="10dp"
+            android:text="@string/login__login_button"
+            android:background="@drawable/btn_color"
+            style="@style/Button_color"
+            app:layout_constraintBottom_toTopOf="@id/bSignUp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bPasswordRecovery"
+            />
+
+        <ProgressBar
+            android:id="@+id/pbLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/bLogin"
+            app:layout_constraintStart_toStartOf="@id/bLogin"
+            app:layout_constraintEnd_toEndOf="@id/bLogin"
+            app:layout_constraintBottom_toBottomOf="@id/bLogin"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bSignUp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="14dp"
+            android:text="@string/login__signup_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bLogin" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
