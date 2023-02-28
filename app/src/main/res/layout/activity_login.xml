@@ -80,6 +80,7 @@
                 android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
+<!--
         <Button
             android:id="@+id/bPasswordRecovery"
             style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -94,24 +95,56 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="1"/>
+-->
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bLogin"
+            style="@style/Button_color"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
-            android:paddingVertical="14dp"
-            android:elevation="10dp"
-            android:text="@string/login__login_button"
+            android:layout_marginTop="24dp"
             android:background="@drawable/btn_color"
-            style="@style/Button_color"
-            app:layout_constraintBottom_toTopOf="@id/bSignUp"
+            android:elevation="10dp"
+            android:paddingVertical="14dp"
+            android:text="@string/login__login_button"
+            app:layout_constraintBottom_toTopOf="@id/bLogin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bPasswordRecovery"
-            />
+            app:layout_constraintTop_toBottomOf="@id/tilPassword" />
 
-        <ProgressBar
+        <TextView
+            android:id="@+id/createAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:elevation="10dp"
+            android:paddingVertical="14dp"
+            android:text="@string/login__login_button"
+            android:gravity="right"
+            app:layout_constraintBottom_toTopOf="@id/createAccount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bLogin"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/googleSignIn"
+            app:icon="@drawable/google"
+            android:background="@drawable/btn_color"
+            app:iconSize="16dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="14dp"
+            android:text="Google Btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bLogin" />
+
+<!--        <ProgressBar
             android:id="@+id/pbLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,21 +153,21 @@
             app:layout_constraintTop_toTopOf="@id/bLogin"
             app:layout_constraintStart_toStartOf="@id/bLogin"
             app:layout_constraintEnd_toEndOf="@id/bLogin"
-            app:layout_constraintBottom_toBottomOf="@id/bLogin"/>
+            app:layout_constraintBottom_toBottomOf="@id/bLogin"/>-->
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/bSignUp"
+<!--        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bSignUpGoogle"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
             android:layout_marginHorizontal="16dp"
             android:paddingVertical="14dp"
-            android:text="@string/login__signup_button"
+            android:text="@string/login__login_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bLogin" />
+            app:layout_constraintTop_toBottomOf="@id/bLogin" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

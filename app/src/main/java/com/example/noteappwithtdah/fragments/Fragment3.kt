@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import com.example.noteappwithtdah.SignUpActivity
+import com.example.noteappwithtdah.LoginActivity
 import com.example.noteappwithtdah.R
 import com.example.noteappwithtdah.databinding.Fragment3Binding
 import com.example.noteappwithtdah.utils.viewBinding
@@ -19,7 +19,7 @@ class Fragment3 : Fragment(R.layout.fragment3) {
 
         binding.btn3.setOnClickListener {
             activity?.finish()
-            startActivity(Intent(activity, SignUpActivity::class.java))
+            startActivity(Intent(activity, LoginActivity::class.java))
         }
 
     }
