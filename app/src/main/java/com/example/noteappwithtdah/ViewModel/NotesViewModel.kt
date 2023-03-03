@@ -27,4 +27,5 @@ class NotesViewModel (application: Application): AndroidViewModel(application) {
         repository.updateNotes(notes)
     }
 
+
 }
